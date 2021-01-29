@@ -1,0 +1,399 @@
+ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+$ cd first-git-project/
+
+ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project
+$ vim second-git-file.txt 
+
+ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project
+$ git init
+Initialized empty Git repository in C:/Users/ANKUR/Desktop/Vs_code/first-git-project/.git/
+
+ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+$ git remote add origin https://github.com/AnkurMehta007/first-project.git
+
+ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+          first-git-file.txt
+	          second-git-file.txt
+
+		  nothing added to commit but untracked files present (use "git add" to track)
+
+		  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+								   2 files changed, 8 insertions(+)
+									    create mode 100644 first-git-file.txt
+									     create mode 100644 second-git-file.txt
+
+									     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+									     $ git push -u orgin main
+									     error: src refspec main does not match any
+									     error: failed to push some refs to 'orgin'
+
+									     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+									     $ git push --set-upstream origin master
+									     info: please complete authentication in your browser...
+									     Enumerating objects: 4, done.
+									     Counting objects: 100% (4/4), done.
+									     now we are going to learn git
+									     Delta compression using up to 8 threads
+									     Compressing objects: 100% (3/3), done.
+									     Writing objects: 100% (4/4), 349 bytes | 174.00 KiB/s, done.
+									     jwdjwddj
+									     Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+									     To https://github.com/AnkurMehta007/first-project.git
+									      * [new branch]      master -> master
+									      Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+									      ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+									      $ vim first-git-file.txt
+
+									      ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+									      $ vim second-git-file.txt
+
+									      ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+									      $ git status
+									      On branch master
+									      Your branch is up to date with 'origin/master'.
+
+									      Changes not staged for commit:
+									        (use "git add <file>..." to update what will be committed)
+										  (use "git restore <file>..." to discard changes in working directory)
+										          modified:   first-git-file.txt
+											          modified:   second-git-file.txt
+
+												  no changes added to commit (use "git add" and/or "git commit -a")
+
+												  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+												  $ git add .
+												  warning: LF will be replaced by CRLF in first-git-file.txt.
+												  The file will have its original line endings in your working directory
+												  warning: LF will be replaced by CRLF in second-git-file.txt.
+												  The file will have its original line endings in your working directory
+
+												  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+												  $ git status
+												  On branch master
+												  Your branch is up to date with 'origin/master'.
+
+												  Changes to be committed:
+												    (use "git restore --staged <file>..." to unstage)
+												            modified:   first-git-file.txt
+													            modified:   second-git-file.txt
+
+
+														    ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+														    $ git commit -m"anything"
+														    [master f8c7d9a] anything
+														     2 files changed, 8 insertions(+), 2 deletions(-)
+
+														     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+														     $ git status
+														     On branch master
+														     Your branch is ahead of 'origin/master' by 1 commit.
+														       (use "git push" to publish your local commits)
+
+														       nothing to commit, working tree clean
+
+														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+														       $ git push origin master
+														       Enumerating objects: 7, done.
+														       Counting objects: 100% (7/7), done.
+														       Delta compression using up to 8 threads
+														       Compressing objects: 100% (4/4), done.
+														       Writing objects: 100% (4/4), 411 bytes | 411.00 KiB/s, done.
+														       Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+														       To https://github.com/AnkurMehta007/first-project.git
+														          00deb1f..f8c7d9a  master -> master
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+															  $ cd ..
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+															  $ mkdir second-git-project
+															  this is a file for second git project
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+															  $ cdr second-git-project
+															  bash: cdr: command not found
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+															  $ cd second-git-project
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project
+															  $ vim third-file.txt
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project
+															  $ git init
+															  Initialized empty Git repository in C:/Users/ANKUR/Desktop/Vs_code/second-git-project/.git/
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+															  $ git remote add origin https://github.com/AnkurMehta007/second-project.git
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+															  $ git add .
+															  warning: LF will be replaced by CRLF in third-file.txt.
+															  The file will have its original line endings in your working directory
+
+															  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+															  $ git commit -m "done"
+															  [master (root-commit) 3890978] done
+															   1 file changed, 6 insertions(+)
+															    create mode 100644 third-file.txt
+
+															    ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+															    $ git push origin master
+															    Enumerating objects: 3, done.
+															    Counting objects: 100% (3/3), done.
+															    Writing objects: 100% (3/3), 256 bytes | 256.00 KiB/s, done.
+															    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+															    To https://github.com/AnkurMehta007/second-project.git
+															     * [new branch]      master -> master
+
+															     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+															     $ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+															     $ cd first-git-project/
+
+															     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project
+															     $ vim second-git-file.txt 
+
+															     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project
+															     $ git init
+															     Initialized empty Git repository in C:/Users/ANKUR/Desktop/Vs_code/first-git-project/.git/
+
+															     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+															     $ git remote add origin https://github.com/AnkurMehta007/first-project.git
+
+															     ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+															     $ git status
+															     On branch master
+
+															     No commits yet
+
+															     Untracked files:
+															       (use "git add <file>..." to include in what will be committed)
+															               first-git-file.txt
+																               second-git-file.txt
+
+																	       nothing added to commit but untracked files present (use "git add" to track)
+
+																	       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																	       $ git add.
+																	       git: 'add.' is not a git command. See 'git --help'.
+
+																	       The most similar command is
+																	               add
+
+																		       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																		       $ git status
+																		       On branch master
+
+																		       No commits yet
+
+																		       Untracked files:
+																		         (use "git add <file>..." to include in what will be committed)
+																			         first-git-file.txt
+																				         second-git-file.txt
+
+																					 nothing added to commit but untracked files present (use "git add" to track)
+
+																					 ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																					 $ git add .
+																					 warning: LF will be replaced by CRLF in first-git-file.txt.
+																					 The file will have its original line endings in your working directory
+																					 warning: LF will be replaced by CRLF in second-git-file.txt.
+																					 The file will have its original line endings in your working directory
+
+																					 ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																					 $ git status
+																					 On branch master
+
+																					 No commits yet
+
+																					 Changes to be committed:
+																					   (use "git rm --cached <file>..." to unstage)
+																					           new file:   first-git-file.txt
+																						           new file:   second-git-file.txt
+
+
+																							   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																							   $ git commit -m"add two files"
+																							   Author identity unknown
+
+																							   *** Please tell me who you are.
+
+																							   Run
+
+																							     git config --global user.email "you@example.com"
+																							       git config --global user.name "Your Name"
+
+																							       to set your account's default identity.
+																							       Omit --global to set the identity only in this repository.
+
+																							       fatal: unable to auto-detect email address (got 'ANKUR@LAPTOP-HHM0M6FM.(none)')
+
+																							       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																							       $ git config global --global user.email"ankurmetha102@gmail.com"
+																							       error: key does not contain a section: global
+
+																							       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																							       $ git config --global user.email"ankurmetha102@gmail.com"
+
+																							       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																							       $ git commit -m"add two files"
+																							       Author identity unknown
+
+																							       *** Please tell me who you are.
+
+																							       Run
+
+																							         git config --global user.email "you@example.com"
+																								   git config --global user.name "Your Name"
+
+																								   to set your account's default identity.
+																								   Omit --global to set the identity only in this repository.
+
+																								   fatal: unable to auto-detect email address (got 'ANKUR@LAPTOP-HHM0M6FM.(none)')
+
+																								   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																								   $ git config --global user.email"ankurmetha102@gmail.com"
+
+																								   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																								   $ git commit -m"add two files"
+																								   Author identity unknown
+
+																								   *** Please tell me who you are.
+
+																								   Run
+
+																								     git config --global user.email "you@example.com"
+																								       git config --global user.name "Your Name"
+
+																								       to set your account's default identity.
+																								       Omit --global to set the identity only in this repository.
+
+																								       fatal: unable to auto-detect email address (got 'ANKUR@LAPTOP-HHM0M6FM.(none)')
+
+																								       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																								       $ git config --global user.email "ankurmetha102@gmail.com"
+
+																								       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																								       $ git commit -m"add two files"
+																								       [master (root-commit) 00deb1f] add two files
+																								        2 files changed, 8 insertions(+)
+																									 create mode 100644 first-git-file.txt
+																									  create mode 100644 second-git-file.txt
+
+																									  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																									  $ git push -u orgin main
+																									  error: src refspec main does not match any
+																									  error: failed to push some refs to 'orgin'
+
+																									  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																									  $ git push --set-upstream origin master
+																									  info: please complete authentication in your browser...
+																									  Enumerating objects: 4, done.
+																									  Counting objects: 100% (4/4), done.
+																									  now we are going to learn git
+																									  Delta compression using up to 8 threads
+																									  Compressing objects: 100% (3/3), done.
+																									  Writing objects: 100% (4/4), 349 bytes | 174.00 KiB/s, done.
+																									  jwdjwddj
+																									  Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+																									  To https://github.com/AnkurMehta007/first-project.git
+																									   * [new branch]      master -> master
+																									   Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+																									   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																									   $ vim first-git-file.txt
+
+																									   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																									   $ vim second-git-file.txt
+
+																									   ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																									   $ git status
+																									   On branch master
+																									   Your branch is up to date with 'origin/master'.
+
+																									   Changes not staged for commit:
+																									     (use "git add <file>..." to update what will be committed)
+																									       (use "git restore <file>..." to discard changes in working directory)
+																									               modified:   first-git-file.txt
+																										               modified:   second-git-file.txt
+
+																											       no changes added to commit (use "git add" and/or "git commit -a")
+
+																											       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																											       $ git add .
+																											       warning: LF will be replaced by CRLF in first-git-file.txt.
+																											       The file will have its original line endings in your working directory
+																											       warning: LF will be replaced by CRLF in second-git-file.txt.
+																											       The file will have its original line endings in your working directory
+
+																											       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																											       $ git status
+																											       On branch master
+																											       Your branch is up to date with 'origin/master'.
+
+																											       Changes to be committed:
+																											         (use "git restore --staged <file>..." to unstage)
+																												         modified:   first-git-file.txt
+																													         modified:   second-git-file.txt
+
+
+																														 ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																														 $ git commit -m"anything"
+																														 [master f8c7d9a] anything
+																														  2 files changed, 8 insertions(+), 2 deletions(-)
+
+																														  ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																														  $ git status
+																														  On branch master
+																														  Your branch is ahead of 'origin/master' by 1 commit.
+																														    (use "git push" to publish your local commits)
+
+																														    nothing to commit, working tree clean
+
+																														    ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																														    $ git push origin master
+																														    Enumerating objects: 7, done.
+																														    Counting objects: 100% (7/7), done.
+																														    Delta compression using up to 8 threads
+																														    Compressing objects: 100% (4/4), done.
+																														    Writing objects: 100% (4/4), 411 bytes | 411.00 KiB/s, done.
+																														    Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+																														    To https://github.com/AnkurMehta007/first-project.git
+																														       00deb1f..f8c7d9a  master -> master
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/first-git-project (master)
+																														       $ cd ..
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+																														       $ mkdir second-git-project
+																														       this is a file for second git project
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+																														       $ cdr second-git-project
+																														       bash: cdr: command not found
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code
+																														       $ cd second-git-project
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project
+																														       $ vim third-file.txt
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project
+																														       $ git init
+																														       Initialized empty Git repository in C:/Users/ANKUR/Desktop/Vs_code/second-git-project/.git/
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+																														       $ git remote add origin https://github.com/AnkurMehta007/second-project.git
+
+																														       ANKUR@LAPTOP-HHM0M6FM MINGW64 ~/Desktop/Vs_code/second-git-project (master)
+																														       $ git add .
+																														       warning: LF will be replaced by CRLF in third-file.txt.
+						
